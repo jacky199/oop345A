@@ -1,0 +1,56 @@
+/**********************************************************
+ * Name: JACK ZHAO
+ * Student ID: 
+ * Seneca email:JACK ZHAO@myseneca.ca
+ **********************************************************/
+1.the difference between internal and external linkage using examples from your code
+If a name is local to its compilation unit and does not conflict with the same name in other compilation units when connected, then the name has an internal linkage.Like :static int itemNumber = INITIAL;In a multi-file program, if a name can interact with other compilation units when connected, then the name has an external linkage.Like:extern int INITIAL;
+
+2. the execution effect of the code in the process() function that creates the String object which is inserted into standard output (which member function(s) does this code call)
+The member function that does the code call is one-argument constructor.
+
+3.the changes that you made in upgrading your String class.
+I use dynamic memory allocation to declare instead of just defining it MAX = 3 and I use this to determine the new memory size.
+
+Quiz 1 Reflection:
+Main.cpp
+#include "generic.h"
+int id =20;
+void increment();
+void display();
+int main() {
+
+  increment();
+  display();
+  counter++;
+
+  std::cout << "[main] counter = " << counter << std::endl;
+  std::count<<"[main] Address of counter =" << &counter << std::endl;
+}
+Generic.h
+#include <iostream>
+static int counter = 0;
+Unit_a.cpp
+#include "generic.h"
+int id = 50;
+void increment(){
+  int counter = 2;
+  counter = counter + 2;
+  std::cout <<"[incremet] Address of counter = " <&counter <<std::endl<<
+}
+void display(){
+  std::cout <<"[display] counter = " << counter <<std::endl;
+  std::cout <<"[display] Address of counter = " << &counter <<std::endl;
+}
+Unit_b.cpp
+#include <iostream>
+extern int counter;
+extern int id;
+void present(){
+  std::cout <<"[present] counter = " << counter <<std::endl;
+  std::cout <<"[present] Address of counter = " << &counter <<std::endl;
+  std::cout <<"[present] Address of id  = " << id <<std::endl;
+}
+
+1. Building Code 2.0 will result in duplicate symbol linker error because of -id.
+2. Building Code 2.0 will result in undefined symbol linker error because of -counter.
