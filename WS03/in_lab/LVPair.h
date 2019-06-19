@@ -1,7 +1,7 @@
 /**********************************************************
- * Name: Jack ZHAO
+ * Name: Jack 
  * Student ID: 123456789
- * Seneca email:Jack ZHAO@myseneca.ca
+ * Seneca email:Jack@myseneca.ca
  **********************************************************/
 #ifndef LVPair_SICT_H
 #define LVPair_SICT_H
