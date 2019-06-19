@@ -1,7 +1,7 @@
 /**********************************************************
- * Name: Jack ZHAO
+ * Name: Jack 
  * Student ID: 123456789
- * Seneca email:Jack ZHAO@myseneca.ca
+ * Seneca email:Jack@myseneca.ca
  **********************************************************/
 #ifndef SICT_TEXT_H
 #define SICT_TEXT_H
